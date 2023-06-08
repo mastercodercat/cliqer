@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Cliqer - Digital Agency</title>
+      <link href="assets/images/logo/favicon.ico" rel="icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/all.min.css" rel="stylesheet">
+      <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+   </head>
+   <body data-bs-spy="scroll" data-bs-target="#myHeader">
+      <!-- Start Preloader -->
+      <div id="preloader">
+         <div id="cliqer-preloader" class="cliqer-preloader">
+            <div class="animation-preloader">
+               <div class="spinner"></div>
+               <div class="txt-loading">
+                  <span data-text-preloader="C" class="letters-loading">C</span>
+                  <span data-text-preloader="L" class="letters-loading">L</span>
+                  <span data-text-preloader="I" class="letters-loading">I</span>
+                  <span data-text-preloader="Q" class="letters-loading">Q</span>
+                  <span data-text-preloader="E" class="letters-loading">E</span>
+                  <span data-text-preloader="R" class="letters-loading">R</span>
+               </div>
+            </div>   
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+         </div>
+      </div>
+      <!-- End Preloader -->
+      <!-- Start page wrapper -->
+      <div id="wrap">
+         <!-- Start Header -->
+         <header class="header header-wrapper sticky" id="myHeader">
+            <div class="d-flex align-items-center">
+               <div class="logo">
+                  <h1><a class="navbar-brand p-0 m-0" href="index.html">Cliqer</a></h1>
+               </div>
+               <nav class="navbar navbar-expand-xl main-menu m-0 p-0 mx-auto d-xl-block d-none">
+                  <button class="navbar-toggler collapsed d-xl-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                  <i class="fa-solid fa-bars"></i>
+                  </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav align-items-center">
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0 active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#about">About</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#client">Client</a>
+                        </li>
+                        <li class="nav-item main-menu-item">
+                           <a class="nav-link p-0" href="#contact">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+               <div class="header-right">
+                  <div class="header-right-widget">
+                     <a href="#" class="call-link">
+                        <div class="header-icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="#f39057" stroke-width="1.5" stroke-miterlimit="10"/>
+                              <path d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5" stroke="#f39057" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22 9C22 5.13 18.87 2 15 2" stroke="#f39057" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </div>
+                        <span>+(01)23 456 789</span>
+                     </a>
+                  </div>
+                  <div class="header-right-widget">
+                     <div class="mobile-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M17.54 8.80989C19.1747 8.80989 20.5 7.48466 20.5 5.84989C20.5 4.21513 19.1747 2.88989 17.54 2.88989C15.9052 2.88989 14.58 4.21513 14.58 5.84989C14.58 7.48466 15.9052 8.80989 17.54 8.80989Z" fill="#292D32"/>
+                           <path d="M6.46 8.80989C8.09476 8.80989 9.42 7.48466 9.42 5.84989C9.42 4.21513 8.09476 2.88989 6.46 2.88989C4.82524 2.88989 3.5 4.21513 3.5 5.84989C3.5 7.48466 4.82524 8.80989 6.46 8.80989Z" fill="#292D32"/>
+                           <path d="M17.54 21.1099C19.1747 21.1099 20.5 19.7847 20.5 18.1499C20.5 16.5152 19.1747 15.1899 17.54 15.1899C15.9052 15.1899 14.58 16.5152 14.58 18.1499C14.58 19.7847 15.9052 21.1099 17.54 21.1099Z" fill="#292D32"/>
+                           <path d="M6.46 21.1099C8.09476 21.1099 9.42 19.7847 9.42 18.1499C9.42 16.5152 8.09476 15.1899 6.46 15.1899C4.82524 15.1899 3.5 16.5152 3.5 18.1499C3.5 19.7847 4.82524 21.1099 6.46 21.1099Z" fill="#292D32"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- End Header -->
+         <!-- start off-canvace menu -->
+         <div class="off-canvace-menu">
+            <div class="xs-overlay-wrap row">
+               <div class="col-3 p-0"><span class="xs-overlay-span"></span></div>
+               <div class="col-3 p-0"><span class="xs-overlay-span"></span></div>
+               <div class="col-3 p-0"><span class="xs-overlay-span"></span></div>
+               <div class="col-3 p-0"><span class="xs-overlay-span"></span></div>
+            </div>
+            <div class="sidebar-textwidget">
+               <div class="close-menu">
+                  <i class="fa-solid fa-xmark"></i>
+               </div>
+               <div class="sidebar-info-contents headline pera-content">
+                  <div class="content-inner">
+                     <div class="logo">
+                        <a class="navbar-brand p-0 m-0 text-white" href="index.html">
+                           Cliqer.<!-- <img src="assets/images/logo/logo.png" alt="Logo" class="img-fluid"> -->
+                        </a>
+                     </div>
+                     <div class=" navbar-collapse" id="navbarSupportedContent2">
+                        <ul class="navbar-nav align-items-center d-xl-none">
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0 active" href="#home">Home</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#about">About</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#service">Service</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#project">Project</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#team">Team</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#blog">Blog</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#client">Client</a>
+                           </li>
+                           <li class="nav-item main-menu-item">
+                              <a class="nav-link p-0" href="#contact">Contact</a>
+                           </li>
+                        </ul>
+                        <p class="text logo-white-desc">The argument in favor of using filler text goes something like this: If you use real content in the Consulting Process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+                     </div>
+                     <div class="content-box">
+                        <h5>Contact Detail</h5>
+                        <div class="contact-detail">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30" width="30">
+                              <path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"></path>
+                           </svg>
+                           <a href="tel:+0123456789">+412 5685 136</a>
+                        </div>
+                        <div class="contact-detail">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30" width="30">
+                              <path d="M16.1 3C16.0344 3.32311 16 3.65753 16 4C16 4.34247 16.0344 4.67689 16.1 5H4.51146L12.0619 11.662L17.1098 7.14141C17.5363 7.66888 18.0679 8.10787 18.6728 8.42652L12.0718 14.338L4 7.21594V19H20V8.89998C20.3231 8.96557 20.6575 9 21 9C21.3425 9 21.6769 8.96557 22 8.89998V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H16.1ZM21 1C22.6569 1 24 2.34315 24 4C24 5.65685 22.6569 7 21 7C19.3431 7 18 5.65685 18 4C18 2.34315 19.3431 1 21 1Z"></path>
+                           </svg>
+                           <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+                        </div>
+                        <div class="contact-detail">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30" width="30">
+                              <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"></path>
+                           </svg>
+                           <span>1150 W. State Street, Suite 240, Boise, Idaho 83702 USA</span>
+                        </div>
+                     </div>
+                     <div class="content-box">
+                        <h5>Social Account</h5>
+                        <ul class="social-box">
+                           <li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
+                           <li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
+                           <li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
+                           <li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end off-canvace menu -->
+         <!-- start hero section -->
+         <section class="hero-section">
+            <div class="hero-wrapper">
+               <div class="row m-0 align-items-center">
+                  <div class="col-12 col-md-3 hero-left">
+                     <div class="hero-sub-heading">
+                        <h2 class="mb-2">1.2+ million</h2>
+                        <p>Customer</p>
+                     </div>
+                     <div class="hero-shape text-center">
+                        <img src="assets/images/hero/shpe.png" alt="shape">
+                     </div>
+                     <div class="hero-slide-image text-center">
+                        <img src="assets/images/hero/h-1.jpg" class="img-fluid" alt="shape">
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <div class="hero-content">
+                        <h2>We <br>Generate<br> You <img src="assets/images/hero/chart-icon.png" class="chart-img" alt="Chart Icon">traffic Globally.</h2>
+                        <p>Cliqer AB is a strategic growth partner for online <br>affiliate marketing.</p>
+                        <a class="check-more-btn" href="#">
+                        <span class="round-icon"><i class="fa-solid fa-light fa-arrow-right-long"></i></span>
+                        <span class="animated-text round-text" id="half-round">check out more</span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-3 hero-right">
+                     <div class="hero-slide-image text-center">
+                        <img src="assets/images/hero/h-2.jpg" class="img-fluid" alt="Hero">
+                     </div>
+                     <div class="animated-round">
+                        <p class="anim-title">C</p>
+                        <img src="assets/images/hero/round-text.svg" alt="creative agency winner" class="anim-round-text">
+                     </div>
+                     <div class="hero-sub-heading">
+                        <h2>A+ Rating</h2>
+                        <p>Avg rating 4.8 makes us world best</p>
+                        <div class="rating-star">
+                           <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end hero section -->
+         <!-- start service slider -->
+         <section class="tags-section">
+            <div class="tags-item-slider">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">Illustrations</h2>
+                  </div>
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">Development</h2>
+                  </div>
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">Designing</h2>
+                  </div>
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">Digital marketing</h2>
+                  </div>
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">Animation</h2>
+                  </div>
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">ui/ux Design</h2>
+                  </div>
+                  <div class="swiper-slide">
+                     <h2 class="tag-item">Copywriting</h2>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end service slider -->
+         <!-- start About us -->
+         <section class="section-padding pb-0" id="about">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-md-6">
+                     <div class="about-content">
+                        <p class="sub-heading">who we are?</p>
+                        <h2 class="section_heading">we'r the top rated agency.</h2>
+                        <p class="ab_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p class="ab_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="m-t-6">
+                           <a href="#" class="primary-btn">Read More About us<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <div class="about-image text-end position-relative">
+                        <span class="image-bg-shape"></span>
+                        <span class="image-box-shape-top"></span>
+                        <span class="image-box-shape-left"></span>
+                        <img src="assets/images/about/about-img01.jpg" alt="About Us" class="img-fluid">
+                     </div>
+                  </div>
+               </div>
+               <div class="counter-wrapper">
+                  <div class="row counter-setion align-items-center">
+                     <div class="counter-item col-12 col-md-3 text-center">
+                        <span class="counter">420</span>
+                        <p>Completed<br> Project</p>
+                     </div>
+                     <div class="counter-item col-12 col-md-3 text-center">
+                        <span  class="counter">10</span>
+                        <p>Years of<br> Experience</p>
+                     </div>
+                     <div class="happy-client col-12 col-md-6 text-center d-flex align-items-center justify-content-center">
+                        <div class="client-images">
+                           <img src="assets/images/about/c-1.jpg" alt="client profile">
+                           <img src="assets/images/about/c-2.jpg" alt="client profile">
+                           <img src="assets/images/about/c-3.png" alt="client profile">
+                        </div>
+                        <div class="">
+                           <h4 class="text-white">Happy Customer</h4>
+                           <p class="mb-0"><i class="fa-solid fa-star me-1"></i>4.8 (12K Review)</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end About us --> 
+         <!-- start service section -->
+         <section class="service-section" id="service">
+            <div class="container">
+               <div class="col-12 col-lg-8 p-0">
+                  <p class="sub-heading heading-black">Our Services</p>
+                  <h2 class="big_heading">Best service, right time, right people.</h2>
+               </div>
+               <div class="service-main position-relative">
+                  <div class="service-items">
+                     <div class="slider swiper-wrapper">
+                        <div class="service_item swiper-slide">
+                           <div class="row align-items-center">
+                              <div class="col-12 col-md-3">
+                                 <span class="s_number">01</span>
+                                 <h3 class="service_title">Website Development</h3>
+                              </div>
+                              <div class="col-12 col-md-5">
+                                 <p class="mb-0 service_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                 <div class="service_img">
+                                    <img src="assets/images/services/image-1.jpg" alt="Service" class="img-fluid">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="service_item swiper-slide">
+                           <div class="row align-items-center">
+                              <div class="col-12 col-md-3">
+                                 <span class="s_number">02</span>
+                                 <h3 class="service_title">Graphic Designing</h3>
+                              </div>
+                              <div class="col-12 col-md-5">
+                                 <p class="mb-0 service_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                 <div class="service_img">
+                                    <img src="assets/images/services/image-2.jpg" alt="Service" class="img-fluid">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="service_item swiper-slide">
+                           <div class="row align-items-center">
+                              <div class="col-12 col-md-3">
+                                 <span class="s_number">03</span>
+                                 <h3 class="service_title">Application Development</h3>
+                              </div>
+                              <div class="col-12 col-md-5">
+                                 <p class="mb-0 service_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                 <div class="service_img">
+                                    <img src="assets/images/services/image-3.jpg" alt="Service" class="img-fluid">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="service_item swiper-slide">
+                           <div class="row align-items-center">
+                              <div class="col-12 col-md-3">
+                                 <span class="s_number">04</span>
+                                 <h3 class="service_title">Search Engine Marketing</h3>
+                              </div>
+                              <div class="col-12 col-md-5">
+                                 <p class="mb-0 service_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                 <div class="service_img">
+                                    <img src="assets/images/services/image-4.jpg" alt="Service" class="img-fluid">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="service_item swiper-slide">
+                           <div class="row align-items-center">
+                              <div class="col-12 col-md-3">
+                                 <span class="s_number">05</span>
+                                 <h3 class="service_title">Digital Marketing</h3>
+                              </div>
+                              <div class="col-12 col-md-5">
+                                 <p class="mb-0 service_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.</p>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                 <div class="service_img">
+                                    <img src="assets/images/services/image-5.jpg" alt="Service" class="img-fluid">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end service section -->
+         <!-- start why choose section -->
+         <section class="section-padding" >
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-md-6">
+                     <div class="about-image text-start position-relative mt-0">
+                        <span class="image-bg-shape"></span>
+                        <span class="image-box-shape-top"></span>
+                        <img src="assets/images/about/about-img02.jpg" alt="Why Choose" class="img-fluid">
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <div class="about-content mt-mobile">
+                        <p class="sub-heading">why choose us?</p>
+                        <h2 class="section_heading">we'r more than an agency.</h2>
+                        <p class="ab_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                        <div class="value-description">
+                           <h4>When you work with cliqer, you are benefiting from:</h4>
+                           <ul class="value_list">
+                              <li>It is a long established.</li>
+                              <li>The point of using Lorem Ipsum.</li>
+                              <li>That it has a more-or-less normal distribution of letters,</li>
+                           </ul>
+                        </div>
+                        <div class="m-t-6">
+                           <a href="#" class="primary-btn">check here learn more<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- start why choose section -->
+         <!-- start portfolio section -->
+         <section class="section-padding pt-0" id="project">
+            <div class="container">
+               <div class="text-center">
+                  <p class="sub-heading d-inline-block">Recent Projects</p>
+                  <h2 class="section_heading">we creative and innovate.</h2>
+                  <p class="ab_desc mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+               </div>
+            </div>
+            <div class="container-fluid p-0">
+               <div class="portfolio-list">
+                  <div class="gallery-wrap wrap-effect-1">
+                     <div class="item" style="background-image: url(assets/images/portfolio/1.jpg);">
+                        <div class="portfolio-desc" data-bs-toggle="modal" data-bs-target=".project_detail">
+                           <h3 class="p_title">Creative Logo Design</h3>
+                           <p class="p_category">Logo Design</p>
+                        </div>
+                     </div>
+                     <div class="item" style="background-image: url(assets/images/portfolio/2.jpg);">
+                        <div class="portfolio-desc" data-bs-toggle="modal" data-bs-target=".project_detail">
+                           <h3 class="p_title">Personal Resume/CV</h3>
+                           <p class="p_category">Website</p>
+                        </div>
+                     </div>
+                     <div class="item" style="background-image: url(assets/images/portfolio/3.jpg);">
+                        <div class="portfolio-desc" data-bs-toggle="modal" data-bs-target=".project_detail">
+                           <h3 class="p_title">SEO strategy for IT company</h3>
+                           <p class="p_category">TECHNICAL AUDIT</p>
+                        </div>
+                     </div>
+                     <div class="item" style="background-image: url(assets/images/portfolio/5.jpg);">
+                        <div class="portfolio-desc" data-bs-toggle="modal" data-bs-target=".project_detail">
+                           <h3 class="p_title">Mobile Application Design</h3>
+                           <p class="p_category">App Design</p>
+                        </div>
+                     </div>
+                     <div class="item" style="background-image: url(assets/images/portfolio/4.jpg);">
+                        <div class="portfolio-desc" data-bs-toggle="modal" data-bs-target=".project_detail">
+                           <h3 class="p_title">Real Estate Marketing</h3>
+                           <p class="p_category">Website</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end portfolio section -->
+         <!-- start Approach section -->
+         <section class="section-padding">
+            <div class="container">
+               <div class="col-12 col-lg-8 p-0">
+                  <h2 class="big_heading mb-3">Our Approach</h2>
+                  <p class="ab_desc mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+               </div>
+               <div class="icon-text-wrapper">
+                  <div class="row">
+                     <div class="col-12 col-md-6 col-lg-3">
+                        <div class="approach-item">
+                           <span class="round r1">
+                           <img src="assets/images/approach/image-1.png" alt="Research" width="100" height="100">
+                           </span>
+                           <h3 class="ap_title">Research</h3>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                           <p class="approach_number">01</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-3">
+                        <div class="approach-item">
+                           <span class="round r2">
+                           <img src="assets/images/approach/image-2.png" alt="Research" width="100" height="100">
+                           </span>                           
+                           <h3 class="ap_title">Strategy</h3>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                           <p class="approach_number">02</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-3">
+                        <div class="approach-item">
+                           <span class="round r3">
+                           <img src="assets/images/approach/image-3.png" alt="Research" width="100" height="100">
+                           </span>
+                           <h3 class="ap_title">Implemenation</h3>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                           <p class="approach_number">03</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-3 last-element">
+                        <div class="approach-item">
+                           <span class="round r4">
+                           <img src="assets/images/approach/image-4.png" alt="Research" width="100" height="100">
+                           </span>
+                           <h3 class="ap_title">Measurement</h3>
+                           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                           <p class="approach_number">04</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end Approach section -->
+         <!-- start team section -->
+         <section class="" id="team">
+            <div class="container">
+               <div class="text-center">
+                  <p class="sub-heading d-inline-block">Our Team</p>
+                  <h2 class="section_heading">get to know our team closer</h2>
+                  <p class="ab_desc mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+               </div>
+               <div class="team-slider">
+                  <div class="slider swiper-wrapper">
+                     <div class="team-item swiper-slide">
+                        <div class="person-profile">
+                           <img src="assets/images/team/image-1.jpg" alt="Team" class="img-fluid">
+                        </div>
+                        <div class="person-detail">
+                           <h3>John Deo</h3>
+                           <p class="mb-0">CEO(Chief Executive Officer)</p>
+                        </div>
+                     </div>
+                     <div class="team-item swiper-slide">
+                        <div class="person-profile">
+                           <img src="assets/images/team/image-2.jpg" alt="Team" class="img-fluid">
+                        </div>
+                        <div class="person-detail">
+                           <h3>Hujaifa Decar</h3>
+                           <p class="mb-0">Project Manager</p>
+                        </div>
+                     </div>
+                     <div class="team-item swiper-slide">
+                        <div class="person-profile">
+                           <img src="assets/images/team/image-3.jpg" alt="Team" class="img-fluid">
+                        </div>
+                        <div class="person-detail">
+                           <h3>Decar Alim</h3>
+                           <p class="mb-0">Human resource Manager</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-next-prev-buttons">
+                     <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                     <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- end team section -->
+         <!-- Start Blog section -->
+         <section class="section-padding blog-bg" id="blog">
+            <div class="container">
+               <div class="title">
+                  <p class="sub-heading d-inline-block">NEWS & ARTICLES</p>
+                  <h2 class="section_heading">LATEST FROM THE BLOG</h2>
+               </div>
+               <div class="blog-slider">
+                  <div class="slider swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="blog-item">
+                           <div class="blog-img">
+                              <img src="assets/images/blog/blog-1.jpg" alt="Post Image"> 
+                           </div>
+                           <div class="blog-detail">
+                              <time class="entry-date" datetime="2022-08-31T05:04:24+00:00"><span class="day">02</span> <span class="month">May</span><span class="year">, 2023</span></time>
+                              <div class="author-detail">
+                                 <div><i class="fa-regular fa-circle-user"></i><span>By Jakaria</span></div>
+                                 <div><i class="fa-regular fa-comments"></i><span>1 Comment</span></div>
+                              </div>
+                              <span class="post_seperator"></span>
+                              <h4 class="post_title"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target=".blog_detail">Miscovery incommode earnestly commanded if.</a></h4>
+                              <p class="post_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+                              <a href="javascript:void(0)" class="readmore_btn" data-bs-toggle="modal" data-bs-target=".blog_detail">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="blog-item">
+                           <div class="blog-img">
+                              <img src="assets/images/blog/blog-2.jpg" alt="Post Image"> 
+                           </div>
+                           <div class="blog-detail">
+                              <time class="entry-date" datetime="2022-08-31T05:04:24+00:00"><span class="day">31</span> <span class="month">Apr</span><span class="year">, 2023</span></time>
+                              <div class="author-detail">
+                                 <div><i class="fa-regular fa-circle-user"></i><span>By Jakaria</span></div>
+                                 <div><i class="fa-regular fa-comments"></i><span>1 Comment</span></div>
+                              </div>
+                              <span class="post_seperator"></span>
+                              <h4 class="post_title"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target=".blog_detail">Expression acceptance imprudence particular</a></h4>
+                              <p class="post_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+                              <a href="javascript:void(0)" class="readmore_btn" data-bs-toggle="modal" data-bs-target=".blog_detail">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="blog-item">
+                           <div class="blog-img">
+                              <img src="assets/images/blog/blog-3.jpg" alt="Post Image"> 
+                           </div>
+                           <div class="blog-detail">
+                              <time class="entry-date" datetime="2022-08-31T05:04:24+00:00"><span class="day">23</span> <span class="month">Apr</span><span class="year">, 2023</span></time>
+                              <div class="author-detail">
+                                 <div><i class="fa-regular fa-circle-user"></i><span>By Jakaria</span></div>
+                                 <div><i class="fa-regular fa-comments"></i><span>1 Comment</span></div>
+                              </div>
+                              <span class="post_seperator"></span>
+                              <h4 class="post_title"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target=".blog_detail">Considered imprudence of technical friendship.</a></h4>
+                              <p class="post_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+                              <a href="javascript:void(0)" class="readmore_btn" data-bs-toggle="modal" data-bs-target=".blog_detail">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Blog section -->
+         <!-- start Testimonial section -->
+         <section class="section-padding pt-0" id="client">
+            <div class="container">
+               <div class="text-center">
+                  <h2 class="big_heading mb-3">Client Testimonials</h2>
+                  <p class="ab_desc mb-0">Some testimonials from our customers</p>
+               </div>
+               <div class="testimonial-slider">
+                  <div class="slider swiper-wrapper">
+                     <div class="t_item swiper-slide">
+                        <img src="assets/images/testimonial/c-1.jpg" alt="client profile">
+                        <div class="t_content">
+                           <h5 class="t_name">Broolyn simmons</h5>
+                           <p class="t_degnation">Senior Client Partner</p>
+                           <p class="t_desc">" we love our client and we love heling then seize opportunities and findsolution. together we develop ideas and build on them. "</p>
+                           <div class="rating"><i class="fa-solid fa-star me-1"></i>4.0</div>
+                        </div>
+                     </div>
+                     <div class="t_item swiper-slide">
+                        <img src="assets/images/testimonial/c-2.jpg" alt="client profile">
+                        <div class="t_content">
+                           <h5 class="t_name">Alextian</h5>
+                           <p class="t_degnation">Founder of Studio</p>
+                           <p class="t_desc">" we love our client and we love heling then seize opportunities and findsolution. together we develop ideas and build on them. "</p>
+                           <div class="rating"><i class="fa-solid fa-star me-1"></i>4.4</div>
+                        </div>
+                     </div>
+                     <div class="t_item swiper-slide">
+                        <img src="assets/images/testimonial/c-3.png" alt="client profile">
+                        <div class="t_content">
+                           <h5 class="t_name">Broolyn simmons</h5>
+                           <p class="t_degnation">Senior Client Partner</p>
+                           <p class="t_desc">" we love our client and we love heling then seize opportunities and findsolution. together we develop ideas and build on them. "</p>
+                           <div class="rating"><i class="fa-solid fa-star me-1"></i>4.5</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+               </div>
+            </div>
+         </section>
+         <!-- end Testimonial section -->
+      </div>
+      <!-- End page wrapper -->
+      <!-- start Footer -->
+      <footer class="footer" id="contact">
+         <div class="container">
+            <div class="footer-top">
+               <h2 class="big_heading mb-3">Any question for us?</h2>
+               <p class="ab_desc mb-5">We will be happy and will answer any questions you want to ask us.</p>
+               <form class="newsletter-form">
+                  <input type="email" class="form-control" placeholder="Enter Your Email Address" name="email" required>
+                  <button type="submit" class="submit-button"><i class="fa-solid fa-arrow-right"></i></button>
+               </form>
+            </div>
+            <div class="footer-bottom">
+               <div class="row">
+                  <div class="col-12 col-md-12 col-lg-4 text-center text-lg-start">
+                     <h2 class="footer-heading">Cliqer</h2>
+                     <p>Our motto is to fulfill customer demand by making them satisfied with grwoing their business.</p>
+                     <div class="social-icon">
+                        <ul class="p-0">
+                           <li>
+                              <a href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                    <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path>
+                                 </svg>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                    <path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"></path>
+                                 </svg>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                    <path d="M13.0281 2.00098C14.1535 2.00284 14.7238 2.00879 15.2166 2.02346L15.4107 2.02981C15.6349 2.03778 15.8561 2.04778 16.1228 2.06028C17.1869 2.10944 17.9128 2.27778 18.5503 2.52528C19.2094 2.77944 19.7661 3.12278 20.3219 3.67861C20.8769 4.23444 21.2203 4.79278 21.4753 5.45028C21.7219 6.08694 21.8903 6.81361 21.9403 7.87778C21.9522 8.14444 21.9618 8.36564 21.9697 8.58989L21.976 8.78397C21.9906 9.27672 21.9973 9.8471 21.9994 10.9725L22.0002 11.7182C22.0003 11.8093 22.0003 11.9033 22.0003 12.0003L22.0002 12.2824L21.9996 13.0281C21.9977 14.1535 21.9918 14.7238 21.9771 15.2166L21.9707 15.4107C21.9628 15.6349 21.9528 15.8561 21.9403 16.1228C21.8911 17.1869 21.7219 17.9128 21.4753 18.5503C21.2211 19.2094 20.8769 19.7661 20.3219 20.3219C19.7661 20.8769 19.2069 21.2203 18.5503 21.4753C17.9128 21.7219 17.1869 21.8903 16.1228 21.9403C15.8561 21.9522 15.6349 21.9618 15.4107 21.9697L15.2166 21.976C14.7238 21.9906 14.1535 21.9973 13.0281 21.9994L12.2824 22.0002C12.1913 22.0003 12.0973 22.0003 12.0003 22.0003L11.7182 22.0002L10.9725 21.9996C9.8471 21.9977 9.27672 21.9918 8.78397 21.9771L8.58989 21.9707C8.36564 21.9628 8.14444 21.9528 7.87778 21.9403C6.81361 21.8911 6.08861 21.7219 5.45028 21.4753C4.79194 21.2211 4.23444 20.8769 3.67861 20.3219C3.12278 19.7661 2.78028 19.2069 2.52528 18.5503C2.27778 17.9128 2.11028 17.1869 2.06028 16.1228C2.0484 15.8561 2.03871 15.6349 2.03086 15.4107L2.02457 15.2166C2.00994 14.7238 2.00327 14.1535 2.00111 13.0281L2.00098 10.9725C2.00284 9.8471 2.00879 9.27672 2.02346 8.78397L2.02981 8.58989C2.03778 8.36564 2.04778 8.14444 2.06028 7.87778C2.10944 6.81278 2.27778 6.08778 2.52528 5.45028C2.77944 4.79194 3.12278 4.23444 3.67861 3.67861C4.23444 3.12278 4.79278 2.78028 5.45028 2.52528C6.08778 2.27778 6.81278 2.11028 7.87778 2.06028C8.14444 2.0484 8.36564 2.03871 8.58989 2.03086L8.78397 2.02457C9.27672 2.00994 9.8471 2.00327 10.9725 2.00111L13.0281 2.00098ZM12.0003 7.00028C9.23738 7.00028 7.00028 9.23981 7.00028 12.0003C7.00028 14.7632 9.23981 17.0003 12.0003 17.0003C14.7632 17.0003 17.0003 14.7607 17.0003 12.0003C17.0003 9.23738 14.7607 7.00028 12.0003 7.00028ZM12.0003 9.00028C13.6572 9.00028 15.0003 10.3429 15.0003 12.0003C15.0003 13.6572 13.6576 15.0003 12.0003 15.0003C10.3434 15.0003 9.00028 13.6576 9.00028 12.0003C9.00028 10.3434 10.3429 9.00028 12.0003 9.00028ZM17.2503 5.50028C16.561 5.50028 16.0003 6.06018 16.0003 6.74943C16.0003 7.43867 16.5602 7.99944 17.2503 7.99944C17.9395 7.99944 18.5003 7.43954 18.5003 6.74943C18.5003 6.06018 17.9386 5.49941 17.2503 5.50028Z"></path>
+                                 </svg>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                    <path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path>
+                                 </svg>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-4 col-lg-2 ">
+                     <h2 class="footer-heading">Quick links</h2>
+                     <ul class="p-0 m-0 footer-link">
+                        <li><a href="#"><span>></span>Home</a></li>
+                        <li><a href="#"><span>></span>About us</a></li>
+                        <li><a href="#"><span>></span>Features</a></li>
+                        <li><a href="#"><span>></span>Contact us</a></li>
+                        <li><a href="#"><span>></span>Services</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-12 col-sm-4 col-lg-2">
+                     <h2 class="footer-heading">Support</h2>
+                     <ul class="p-0 m-0 footer-link">
+                        <li><a href="#"><span>></span>Support</a></li>
+                        <li><a href="#"><span>></span>Privacy Policy</a></li>
+                        <li><a href="#"><span>></span>Term & Condition</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-12 col-sm-4 col-lg-4">
+                     <h2 class="footer-heading">Connect with us </h2>
+                     <div class="contact-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30" width="30">
+                           <path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z"></path>
+                        </svg>
+                        <a href="tel:+0123456789">+412 5685 136</a>
+                     </div>
+                     <div class="contact-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30" width="30">
+                           <path d="M16.1 3C16.0344 3.32311 16 3.65753 16 4C16 4.34247 16.0344 4.67689 16.1 5H4.51146L12.0619 11.662L17.1098 7.14141C17.5363 7.66888 18.0679 8.10787 18.6728 8.42652L12.0718 14.338L4 7.21594V19H20V8.89998C20.3231 8.96557 20.6575 9 21 9C21.3425 9 21.6769 8.96557 22 8.89998V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H16.1ZM21 1C22.6569 1 24 2.34315 24 4C24 5.65685 22.6569 7 21 7C19.3431 7 18 5.65685 18 4C18 2.34315 19.3431 1 21 1Z"></path>
+                        </svg>
+                        <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+                     </div>
+                     <div class="contact-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="30" width="30">
+                           <path d="M12 20.8995L16.9497 15.9497C19.6834 13.2161 19.6834 8.78392 16.9497 6.05025C14.2161 3.31658 9.78392 3.31658 7.05025 6.05025C4.31658 8.78392 4.31658 13.2161 7.05025 15.9497L12 20.8995ZM12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364L12 23.7279ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13ZM12 15C9.79086 15 8 13.2091 8 11C8 8.79086 9.79086 7 12 7C14.2091 7 16 8.79086 16 11C16 13.2091 14.2091 15 12 15Z"></path>
+                        </svg>
+                        <span>1150 W. State Street, Suite 240, Boise, Idaho 83702 USA</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-copyright">
+               <p class="mb-0">Copyright © 2023 Cliqer. All Right Reserved</p>
+            </div>
+         </div>
+      </footer>
+      <!-- end Footer -->
+      <!-- Start Portfolio Detail Modal -->
+      <div class="modal fade project_detail" tabindex="-1" aria-labelledby="project_detail_Label" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="project_detail_Label">SEO strategy for IT company</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-12 col-md-5">
+                        <img src="assets/images/portfolio/2.jpg" alt="Project" class="project_img">
+                     </div>
+                     <div class="col-12 col-md-7">
+                        <span class="pr_catgory">SEO ANALYSIS</span>
+                        <div class="pr_desc mb-3 mb-md-5">
+                           <p>Donec mattis, augue condimentum varius vestibulum, magna lorem placerat ipsum, faucibus porta libero ipsum ut lorem. Morbi sed purus interdum. Ut porttitor odio eget mauris rutrum, a vehicula turpis llamcorper. Quisque iaculis leo non eleifend pretium. Nunc ullamcorper scelerisque purus semper.</p>
+                           <p class="mb-2">Donec mattis, augue condimentum varius vestibulum, magna lorem placerat ipsum, faucibus porta libero ipsum ut lorem. Morbi sed purus interdum. Ut porttitor odio eget mauris rutrum, a vehicula turpis llamcorper. Quisque iaculis leo non eleifend pretium. Nunc ullamcorper scelerisque purus semper.</p>
+                        </div>
+                        <a href="#" class="primary-btn">Visit Website<i class="fa-solid fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Portfolio Detail Modal -->
+      <!-- Start Blog Detail Modal -->
+      <div class="modal fade blog_detail" tabindex="-1" aria-labelledby="blog_Label" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="blog_Label">Miscovery incommode earnestly commanded if.</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="row">
+                     <div class="col-12 col-md-8">
+                        <img src="assets/images/blog/blog-1.jpg" class="img-fluid" alt="Blog">
+                        <div class="author-detail modal-meta">
+                           <div><i class="fa-regular fa-circle-user"></i><span>By Jakaria</span></div>
+                           <div><i class="fa-regular fa-comments"></i><span>1 Comment</span></div>
+                           <div><i class="fa-regular fa-calendar"></i><span>27, June 2022</span></div>
+                        </div>
+                        <div class="post-desc">
+                           <p>Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have alteration in some injected or words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrang hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type simen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                           <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. orem Ipsum has been the industry’s standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into unchanged.</p>
+                        </div>
+                        <div class="social-icon text-center">
+                           <ul class="p-0">
+                              <li>
+                                 <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                       <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                       <path d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z"></path>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                       <path d="M13.0281 2.00098C14.1535 2.00284 14.7238 2.00879 15.2166 2.02346L15.4107 2.02981C15.6349 2.03778 15.8561 2.04778 16.1228 2.06028C17.1869 2.10944 17.9128 2.27778 18.5503 2.52528C19.2094 2.77944 19.7661 3.12278 20.3219 3.67861C20.8769 4.23444 21.2203 4.79278 21.4753 5.45028C21.7219 6.08694 21.8903 6.81361 21.9403 7.87778C21.9522 8.14444 21.9618 8.36564 21.9697 8.58989L21.976 8.78397C21.9906 9.27672 21.9973 9.8471 21.9994 10.9725L22.0002 11.7182C22.0003 11.8093 22.0003 11.9033 22.0003 12.0003L22.0002 12.2824L21.9996 13.0281C21.9977 14.1535 21.9918 14.7238 21.9771 15.2166L21.9707 15.4107C21.9628 15.6349 21.9528 15.8561 21.9403 16.1228C21.8911 17.1869 21.7219 17.9128 21.4753 18.5503C21.2211 19.2094 20.8769 19.7661 20.3219 20.3219C19.7661 20.8769 19.2069 21.2203 18.5503 21.4753C17.9128 21.7219 17.1869 21.8903 16.1228 21.9403C15.8561 21.9522 15.6349 21.9618 15.4107 21.9697L15.2166 21.976C14.7238 21.9906 14.1535 21.9973 13.0281 21.9994L12.2824 22.0002C12.1913 22.0003 12.0973 22.0003 12.0003 22.0003L11.7182 22.0002L10.9725 21.9996C9.8471 21.9977 9.27672 21.9918 8.78397 21.9771L8.58989 21.9707C8.36564 21.9628 8.14444 21.9528 7.87778 21.9403C6.81361 21.8911 6.08861 21.7219 5.45028 21.4753C4.79194 21.2211 4.23444 20.8769 3.67861 20.3219C3.12278 19.7661 2.78028 19.2069 2.52528 18.5503C2.27778 17.9128 2.11028 17.1869 2.06028 16.1228C2.0484 15.8561 2.03871 15.6349 2.03086 15.4107L2.02457 15.2166C2.00994 14.7238 2.00327 14.1535 2.00111 13.0281L2.00098 10.9725C2.00284 9.8471 2.00879 9.27672 2.02346 8.78397L2.02981 8.58989C2.03778 8.36564 2.04778 8.14444 2.06028 7.87778C2.10944 6.81278 2.27778 6.08778 2.52528 5.45028C2.77944 4.79194 3.12278 4.23444 3.67861 3.67861C4.23444 3.12278 4.79278 2.78028 5.45028 2.52528C6.08778 2.27778 6.81278 2.11028 7.87778 2.06028C8.14444 2.0484 8.36564 2.03871 8.58989 2.03086L8.78397 2.02457C9.27672 2.00994 9.8471 2.00327 10.9725 2.00111L13.0281 2.00098ZM12.0003 7.00028C9.23738 7.00028 7.00028 9.23981 7.00028 12.0003C7.00028 14.7632 9.23981 17.0003 12.0003 17.0003C14.7632 17.0003 17.0003 14.7607 17.0003 12.0003C17.0003 9.23738 14.7607 7.00028 12.0003 7.00028ZM12.0003 9.00028C13.6572 9.00028 15.0003 10.3429 15.0003 12.0003C15.0003 13.6572 13.6576 15.0003 12.0003 15.0003C10.3434 15.0003 9.00028 13.6576 9.00028 12.0003C9.00028 10.3434 10.3429 9.00028 12.0003 9.00028ZM17.2503 5.50028C16.561 5.50028 16.0003 6.06018 16.0003 6.74943C16.0003 7.43867 16.5602 7.99944 17.2503 7.99944C17.9395 7.99944 18.5003 7.43954 18.5003 6.74943C18.5003 6.06018 17.9386 5.49941 17.2503 5.50028Z"></path>
+                                    </svg>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24">
+                                       <path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path>
+                                    </svg>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="nav-links">
+                           <div class="prev">
+                              <a href="#" rel="prev">
+                                 <img src="assets/images/blog/nav-1.jpg" class="n_link-img" alt="Prev Post"><h3>Expression acceptance imprudence particular</h3>
+                              </a>    
+                           </div>
+                           <div class="next">
+                              <a href="#" rel="next">
+                                 <h3>Considered imprudence of technical friendship.</h3><img src="assets/images/blog/nav-2.jpg" class="n_link-img" alt="Next Post">
+                              </a>       
+                           </div>
+                        </div>
+                        <div class="comment_div">
+                           <h3 class="mb-4">Leave a Comment</h3>
+                           <form class="comment-form">
+                              <div class="row">
+                                 <div class="col-12 col-md-6">
+                                    <input type="text" name="name" placeholder="Enter Your Name" class="form-control">
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <input type="email" name="email" placeholder="Enter Your Email" class="form-control">
+                                 </div>
+                                 <div class="col-12">
+                                    <textarea name="comment" placeholder="Write Comment" class="form-control"></textarea>
+                                 </div>
+                                 <div class="col-12">
+                                    <button type="submit" class="btn-submit">Post Comment</button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-12 col-md-4">
+                        <div id="sidebar">
+                           <div class="sidebar_widget">
+                              <h4 class="widget_title">Search</h4>
+                              <div class="search">
+                                 <input type="text" class="wp-block-search__input form-control mb-0" name="s" value="" placeholder="Search here" required="">
+                                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                              </div>
+                           </div>   
+                           <div class="sidebar_widget">
+                              <h4 class="widget_title">Latest Post</h4>
+                              <ul class="p-0 latest-post m-0">
+                                 <li><a href="#"><img src="assets/images/blog/nav-1.jpg" width="80" height="80" class="img-fluid" alt="post"><h4>Considered imprudence of technical friendship.</h4></a>
+                                 </li>
+                                 <li><a href="#"><img src="assets/images/blog/nav-2.jpg" width="80" height="80" class="img-fluid" alt="post"><h4>Expression acceptance imprudence particular</h4></a>
+                                 </li>
+                                 <li><a href="#"><img src="assets/images/blog/nav-1.jpg" width="80" height="80" class="img-fluid" alt="post"><h4>Considered imprudence of technical friendship.</h4></a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="sidebar_widget">
+                              <h4 class="widget_title">Category</h4>
+                              <ul class="ps-4 m-0 category_list">
+                                 <li><a href="#">Business</a></li>
+                                 <li><a href="#">Consulting</a></li>
+                                 <li><a href="#">Digital</a></li>
+                                 <li><a href="#">Finance</a></li>
+                                 <li><a href="#">Support</a></li>
+                              </ul>
+                           </div>
+                           <div class="sidebar_widget">
+                              <h4 class="widget_title">Tags</h4>
+                              <ul class="p-0 m-0 tag_list">
+                                 <li><a href="#">Design</a></li>
+                                 <li><a href="#">Digital</a></li>
+                                 <li><a href="#">mobile</a></li>
+                                 <li><a href="#">Tech</a></li>
+                                 <li><a href="#">Web</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Blog Detail Modal -->
+      <!-- Start Scroll Bottom To Top -->
+      <div class="scroll-top" data-scroll="up">
+         <i class="fa-solid fa-arrow-up-long"></i>
+      </div>
+      <!-- End Scroll Bottom To Top -->
+      <!-- Your All Scripts will be here -->
+      <script src="assets/js/jquery-3.6.3.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/circletype.min.js"></script>  
+      <script src="assets/js/swiper-bundle.min.js"></script> 
+      <script src="assets/js/style.js"></script> 
+   </body>
+</html>
